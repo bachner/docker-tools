@@ -1,0 +1,3 @@
+#!/bin/bash
+command=${*:2}
+docker exec -it `docker ps | grep $1 | cut -d" " -f1` ${command}
